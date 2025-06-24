@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
+/*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 18:58:29 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/24 18:27:13 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/24 18:55:04 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t			i;
 
 	d = dest;
-	source = (unsigned char *)src;
+	source = src;
 	i = 0;
 	while (i < n)
-		d[i] = source[i++];
+	{
+		d[i] = source[i];
+		i++;
+	}
 	return (dest);
 }
