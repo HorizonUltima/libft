@@ -6,13 +6,13 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 12:59:29 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/13 12:59:30 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 13:22:25 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_setstart(char const *str, size_t *i, char const *set, int v)
+static void	ft_setstart(char const *str, size_t *i, char const *set)
 {
 	size_t	j;
 
@@ -70,10 +70,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1)
 		return ((void *)0);
 	start = 0;
-	ft_setstart(s1, start, set);
+	ft_setstart(s1, &start, set);
 	end = ft_strlen(s1) - 1;
 	if (end > 0)
-		ft_setend(s1, end, set);
+		ft_setend(s1, &end, set);
 	if (end > start)
 	{
 		i = 0;
