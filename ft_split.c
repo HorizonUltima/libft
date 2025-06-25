@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 14:43:15 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 18:47:23 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 19:09:15 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ static char	**ft_splitter(char const *s, char **result, char c)
 		else
 			i++;
 	}
+	result[slice] = (void *)0;
 	return (result);
 }
 
