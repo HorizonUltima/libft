@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 12:16:26 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/24 12:16:27 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:00:16 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n >= 10)
 		ft_putnbr_fd(n / 10, fd);
-	ft_putchr_fd(n % 10 + '0', fd);
+	ft_putchar_fd(n % 10 + '0', fd);
 }
