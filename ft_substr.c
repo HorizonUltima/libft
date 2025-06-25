@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 19:51:42 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 12:32:44 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 12:34:49 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static char	*ft_convey(char const *s, char *str, unsigned int start, size_t len)
 		str[i] = s[start + i];
 		i++;
 	}
-	subs[i] = 0;
+	str[i] = 0;
 	return (str);
 }
 
