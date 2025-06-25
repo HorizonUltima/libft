@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 12:59:29 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 13:28:33 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 16:22:25 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (end > start)
 	{
 		i = 0;
-		s2 = (char *)malloc(sizeof(char) * (end - start + 1));
+		s2 = (char *)malloc(sizeof(char) * (end - start + 2));
 		if (!s2)
 			return ((void *)0);
 		while (start <= end)
