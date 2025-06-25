@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 12:15:37 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 13:53:08 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 16:05:22 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (!c || fd == -1)
+	if (!c || fd <= -1)
 		return ;
 	write(fd, &c, 1);
 	return ;
