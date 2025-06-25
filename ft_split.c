@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 14:43:15 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 13:29:56 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 15:28:23 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ static size_t	ft_splitcount(char const *s, char c)
 
 	i = 0;
 	flag = 0;
+	count = 0;
 	while (s[i])
 	{
 		while (flag == 0 && s[i] != c)
@@ -48,6 +49,7 @@ static char	**ft_splitter(char const *s, char **result, char c)
 	size_t	slice;
 
 	i = 0;
+	slice = 0;
 	while (s[i])
 	{
 		if (s[i] != c)

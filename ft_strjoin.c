@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 12:12:04 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 13:13:23 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 15:25:37 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3[0] = s1[0];
 	j = 0;
 	while (++j < len2)
-		s3[i + j] = s2[j];
+		s3[len1 + j] = s2[j];
 	s3[len1] = s2[0];
 	s3[i + j] = 0;
 	return (s3);
