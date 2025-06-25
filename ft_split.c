@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 14:43:15 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 15:28:23 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 16:52:06 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	**ft_split(char const *s, char c)
 {
 	char	**result;
 
-	if (*s == 0 || !s)
+	if (!s)
 		return ((void *)0);
 	result = (char **)malloc(sizeof(char *) * (ft_splitcount(s, c) + 1));
 	if (!result)

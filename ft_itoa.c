@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 17:04:59 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 16:34:15 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 16:52:39 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static char	*ft_filling(char *str, int holder, int size, int sign)
 	str[size + sign] = 0;
 	while (0 <= --size)
 	{
-		str[size + sign] = holder % 10;
+		str[size + sign] = (holder % 10) + '0';
 		holder /= 10;
 	}
 	return (str);
@@ -33,7 +33,10 @@ char	*ft_itoa(int n)
 	size = 1;
 	sign = 0;
 	if (n < 0)
+	{
 		sign += 1;
+		n *= -1;
+	}
 	holder = n;
 	while (n >= 10)
 	{
