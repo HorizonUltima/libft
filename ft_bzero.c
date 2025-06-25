@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 17:12:03 by hgergink          #+#    #+#             */
-/*   Updated: 2025/05/28 17:12:05 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:38:47 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	ft_bzero(void *s, size_t n)
 	b = s;
 	i = 0;
 	while (i < n)
-		b[i] = 0;
+		b[i++] = 0;
 }
