@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/19 18:43:47 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/19 19:34:51 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 13:34:23 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return ((void *)0);
 	i = 0;
 	while (s[i])
-		str[i++] = f(i, s[i]);
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
 	str[i] = 0;
 	return (str);
 }

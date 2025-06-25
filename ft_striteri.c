@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 12:21:21 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/20 13:03:33 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/25 13:49:32 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,11 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 	if (!s || !f)
 		return ;
-	i = 4294967295;
-	while (s[++i])
+	i = 0;
+	while (s[i])
+	{
 		f(i, s + i);
+		i++;
+	}
 	return ;
 }
