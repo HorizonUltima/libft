@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:05:59 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 16:36:37 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/26 13:59:44 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	size_t				i;
 	const unsigned char	*ptr;
 
-	if (!s)
-		return ((void *)0);
 	ptr = (const unsigned char *)s;
 	i = 0;
 	while (i < n && ptr[i] != (unsigned char)c)
