@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 12:59:29 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/26 18:43:08 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/26 18:56:37 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (end == 0)
 		return (ft_calloc(1, 1));
 	ft_setend(s1, &end, set);
-	if (--end >= start)
+	if (end-- > start)
 	{
 		i = 0;
 		s2 = (char *)malloc(sizeof(char) * (end - start + 2));
