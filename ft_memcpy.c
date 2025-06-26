@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 18:58:29 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/26 13:56:40 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/26 14:15:47 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*source;
 	size_t			i;
 
-	if (!dest || !src)
-		return ((void *)0);
 	d = dest;
 	source = (unsigned char *)src;
 	i = 0;
