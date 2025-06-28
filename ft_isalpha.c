@@ -6,11 +6,9 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 15:48:27 by hgergink          #+#    #+#             */
-/*   Updated: 2025/05/27 14:03:46 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:59:31 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {

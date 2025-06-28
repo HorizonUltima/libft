@@ -6,11 +6,9 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 19:57:15 by hgergink          #+#    #+#             */
-/*   Updated: 2025/05/27 20:02:18 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/28 19:00:03 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

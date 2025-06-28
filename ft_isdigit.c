@@ -6,11 +6,9 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 16:35:50 by hgergink          #+#    #+#             */
-/*   Updated: 2025/05/27 17:26:44 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:59:56 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

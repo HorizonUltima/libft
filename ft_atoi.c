@@ -6,11 +6,9 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 20:10:25 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/28 18:43:57 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:58:54 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

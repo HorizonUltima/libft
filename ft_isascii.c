@@ -6,11 +6,9 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 18:53:31 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 14:25:58 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:59:45 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isascii(int c)
 {
