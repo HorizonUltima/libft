@@ -6,7 +6,7 @@
 /*   By: hgergink <hgergink@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 14:43:15 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/25 19:09:15 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/28 20:05:16 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ void	*ft_freesplit(char **strary, size_t size)
 {
 	while (size)
 		free(strary[--size]);
+	free(strary);
 	return ((void *)0);
 }
 
@@ -58,7 +59,7 @@ static char	**ft_splitter(char const *s, char **result, char c)
 			while (s[i] != c && s[i])
 				i++;
 			result[slice] = ft_substr(s, start, i - start);
-			if (!result)
+			if (!result[slice])
 				return (ft_freesplit(result, slice));
 			slice++;
 		}

@@ -6,13 +6,12 @@
 /*   By: hgergink <hgergink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 19:30:14 by hgergink          #+#    #+#             */
-/*   Updated: 2025/06/26 20:46:53 by hgergink         ###   ########.fr       */
+/*   Updated: 2025/06/30 17:40:45 by hgergink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
